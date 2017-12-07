@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">04_Peliculas</string>
+    <string name="duration">%d min</string>
 </resources>
