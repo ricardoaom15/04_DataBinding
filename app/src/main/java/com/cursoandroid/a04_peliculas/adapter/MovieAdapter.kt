@@ -19,7 +19,11 @@ import java.util.*
  */
 class MovieAdapter: RecyclerView.Adapter<MovieHolder>() {
 
-    val data: List<Movie> = emptyList()
+    var data: List<Movie> = emptyList()
+    set(value) {
+        field = value
+        notifyDataSetChanged()
+    }
 
     override fun onBindViewHolder(holder: MovieHolder, position: Int) {
         holder.bind(data[position])
