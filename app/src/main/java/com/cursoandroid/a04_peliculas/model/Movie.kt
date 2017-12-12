@@ -1,12 +1,14 @@
 package com.cursoandroid.a04_peliculas.model
 
+import android.annotation.SuppressLint
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 import java.util.*
 
-/**
- * Created by RicardoAndrés on 06/12/2017.
- */
+@SuppressLint("ParcelCreator")
+@Parcelize
 class Movie (val img: String,
              val name:String?,
              val duration: Int,
              val releaseDate: Date?,
-             val sinopsis: String)
+             val sinopsis: String): Parcelable
